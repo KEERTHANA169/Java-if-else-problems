@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        char letter = s.next().charAt(0);
+
+        // Check for both lowercase and uppercase vowels
+        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' ||
+            letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U') {
+            System.out.println("vowel");
+        } else {
+            System.out.println("consonant");
+        }
+
+        s.close();
+    }
+}
